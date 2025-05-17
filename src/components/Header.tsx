@@ -4,9 +4,10 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import DarkModeToggle from "./DarkModeToggle";
 import LogOutButton from "./LogOutButton";
+import { getUser } from "@/auth/server";
 
-const Header = () => {
-  const user = 1;
+async function Header() {
+  const user = await getUser();
   return (
     <header
       className="bg-popover relative flex h-24 w-full items-center justify-between px-3 sm:px-8"
@@ -44,6 +45,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
+}
 
 export default Header;
