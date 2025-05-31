@@ -14,8 +14,8 @@ async function Header() {
       className="bg-popover relative flex h-24 w-full items-center justify-between px-3 sm:px-8"
       style={{ boxShadow: shadow }}
     >
-      <SidebarTrigger className="absolute top-1 left-1" />
-      <Link href="/" className="flex items-end gap-2">
+      <SidebarTrigger className="absolute top-9 left-2" />
+      <Link href="/" className="ml-9 flex items-end gap-2 md:ml-4">
         <Image
           src="/goatius.png"
           alt="logo"
