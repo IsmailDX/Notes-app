@@ -1,6 +1,5 @@
 "use client";
 
-import { Note } from "@prisma/client";
 import React, { useEffect, useMemo, useState } from "react";
 import {
   SidebarGroupContent as SidebarGroupContentShadCn,
@@ -12,6 +11,14 @@ import { Input } from "./ui/input";
 import Fuse from "fuse.js";
 import SelectNoteButton from "./SelectNoteButton";
 import DeleteNoteButton from "./DeleteNoteButton";
+
+type Note = {
+  id: string;
+  text: string;
+  authorId: string;
+  createdAt: Date;
+  updatedAt: Date;
+};
 
 type Props = {
   notes: Note[];
