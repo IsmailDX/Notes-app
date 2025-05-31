@@ -74,6 +74,7 @@ export const askAIAboutNotesAction = async (
   }
 
   const formattedNotes = notes
+    // @typescript-eslint/no-explicit-any
     .map((note: any) =>
       `
       Text: ${note.text}
