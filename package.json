@@ -5,6 +5,9 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "vercel-build": "prisma generate && next build",
+    "prisma:generate": "prisma generate",
+    "postinstall": "prisma generate",
     "start": "next start",
     "lint": "next lint",
     "migrate": "npx prisma generate"
