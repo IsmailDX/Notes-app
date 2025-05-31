@@ -74,6 +74,7 @@ export const askAIAboutNotesAction = async (
   }
 
   const formattedNotes = notes
+    //@ts-ignore
     .map((note) =>
       `
       Text: ${note.text}
